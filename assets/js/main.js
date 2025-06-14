@@ -275,25 +275,16 @@
 
 		};
 
-		$menuInner
-			.on('click', function(event) {
-				event.stopPropagation();
-			})
-			.on('click', 'a', function(event) {
-
-				var href = $(this).attr('href');
-
-				event.preventDefault();
-				event.stopPropagation();
-
-				// Hide.
-					$menu._hide();
-
-				// Redirect.
-					window.setTimeout(function() {
-						window.location.href = href;
-					}, 250);
-
+		$menuInner.on('click', 'a', function(event) {
+			  event.preventDefault();
+			  event.stopPropagation();
+			
+			  $menu._hide();
+			
+			  const href = $(this).attr('href');
+			  if (href && href !== '#' && href.trim() !== '') {
+			    setTimeout(() => window.location.href = href, 250);
+			  }
 			});
 
 		$menu
