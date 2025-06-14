@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+
+.nav-item:hover .nav-link {
+    color: black;
+    background-color: rgb(190, 130, 11);
+    
+}
+
+.carousel-caption{
+    padding-bottom: 25%;
+    position: absolute;
+    top: 200px;
+}
+
+
+.carousel-caption h1{
+    color: gold;
+}
+
+.carousel-item{
+    height: 70vh;
+}
+
+
+
+.piccc{
+    width: 100%;
+    height: 300px;
+    padding: 1%;
+}
+
+.picc{
+    height: 100%;
+}
+
+.pic{
+    width: 100%;
+    height: 300px;
+}
+
+.buton{
+    float: right;
+}
+
+footer{
+    background-color: rgb(190, 86, 0);
+    
+    
+    color: white;
+}
